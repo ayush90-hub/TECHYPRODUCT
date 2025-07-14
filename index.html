@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Future of Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Smooth Scroll Container -->
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+    
+    <!-- Testing Website Label -->
+    <div class="testing-label">TESTING WEBSITE</div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="cursor-ripple"></div>
+    
+    <!-- Floating Background Elements -->
+    <div class="floating-shapes">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+    </div>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="logo-morph">
+                <div class="morph-circle"></div>
+                <div class="morph-text">TechStore</div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+        <div class="preloader-particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Tech<span class="neon">Store</span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="word" data-delay="0">Future</span>
+                    <span class="word" data-delay="200">of</span>
+                    <span class="word neon" data-delay="400">Technology</span>
+                    <span class="word" data-delay="600">Starts</span>
+                    <span class="word" data-delay="800">Here</span>
+                </h1>
+                <p class="hero-subtitle" data-delay="1000">Discover cutting-edge solutions that transform your digital experience with innovative tech products and services.</p>
+                <button class="cta-button magnetic" data-delay="1200">Explore Products</button>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card tilt-card">
+                    <div class="tech-icon">⚡</div>
+                </div>
+            </div>
+        </div>
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="hero-bg-animation">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-up">Why Choose TechStore</h2>
+            <div class="stats-container">
+                <div class="stat-item fade-up" data-delay="100">
+                    <div class="counter" data-target="500">0</div>
+                    <span>Happy Clients</span>
+                </div>
+                <div class="stat-item fade-up" data-delay="200">
+                    <div class="counter" data-target="1200">0</div>
+                    <span>Projects Completed</span>
+                </div>
+                <div class="stat-item fade-up" data-delay="300">
+                    <div class="counter" data-target="50">0</div>
+                    <span>Team Members</span>
+                </div>
+                <div class="stat-item fade-up" data-delay="400">
+                    <div class="counter" data-target="99">0</div>
+                    <span>Success Rate %</span>
+                </div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card slide-left tilt-card" data-delay="100">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Innovation First</h3>
+                    <p>Cutting-edge technology solutions that push boundaries and deliver exceptional results.</p>
+                </div>
+                <div class="feature-card slide-right tilt-card" data-delay="200">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized performance and rapid deployment to keep your business ahead of the competition.</p>
+                </div>
+                <div class="feature-card slide-left tilt-card" data-delay="300">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Secure & Reliable</h3>
+                    <p>Enterprise-grade security and 99.9% uptime guarantee for peace of mind.</p>
+                </div>
+                <div class="feature-card slide-right tilt-card" data-delay="400">
+                    <div class="feature-icon">💎</div>
+                    <h3>Premium Quality</h3>
+                    <p>Handpicked products and services that meet the highest standards of excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title fade-up">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card tilt-card">
+                    <div class="service-front">
+                        <div class="service-icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>Modern, responsive websites</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>Custom Website Design</li>
+                            <li>E-commerce Solutions</li>
+                            <li>Progressive Web Apps</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                        <button class="service-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="service-card tilt-card">
+                    <div class="service-front">
+                        <div class="service-icon">📱</div>
+                        <h3>Mobile Apps</h3>
+                        <p>iOS & Android applications</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Mobile Apps</h3>
+                        <ul>
+                            <li>Native App Development</li>
+                            <li>Cross-platform Solutions</li>
+                            <li>UI/UX Design</li>
+                            <li>App Store Optimization</li>
+                        </ul>
+                        <button class="service-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="service-card tilt-card">
+                    <div class="service-front">
+                        <div class="service-icon">☁️</div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Scalable cloud infrastructure</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Cloud Solutions</h3>
+                        <ul>
+                            <li>Cloud Migration</li>
+                            <li>DevOps & CI/CD</li>
+                            <li>Infrastructure Management</li>
+                            <li>Security & Compliance</li>
+                        </ul>
+                        <button class="service-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-up">Our Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item tilt-card" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Platform</h3>
+                            <p>Modern shopping experience</p>
+                            <button class="portfolio-btn" onclick="openModal('project1')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item tilt-card" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Fitness Mobile App</h3>
+                            <p>Health tracking solution</p>
+                            <button class="portfolio-btn" onclick="openModal('project2')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item tilt-card" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>SaaS Dashboard</h3>
+                            <p>Analytics & reporting tool</p>
+                            <button class="portfolio-btn" onclick="openModal('project3')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item tilt-card" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Food Delivery App</h3>
+                            <p>On-demand delivery service</p>
+                            <button class="portfolio-btn" onclick="openModal('project4')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-up">What Our Clients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"TechStore transformed our business with their innovative solutions. The team's expertise and dedication exceeded our expectations."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JS</div>
+                            <div class="author-info">
+                                <h4>John Smith</h4>
+                                <span>CEO, InnovateCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Outstanding service and cutting-edge technology. Our mobile app launch was a huge success thanks to their expertise."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MJ</div>
+                            <div class="author-info">
+                                <h4>Maria Johnson</h4>
+                                <span>CTO, StartupHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Professional, reliable, and innovative. TechStore delivered exactly what we needed to scale our business."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DW</div>
+                            <div class="author-info">
+                                <h4>David Wilson</h4>
+                                <span>Founder, TechVentures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Tech Street, Innovation City, IC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@techstore.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer slide-up-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Tech<span class="neon">Store</span></span>
+                    <p>Transforming ideas into digital reality</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">Mobile Apps</a></li>
+                            <li><a href="#services">Cloud Solutions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">📘</a>
+                            <a href="#" class="social-link">🐦</a>
+                            <a href="#" class="social-link">💼</a>
+                            <a href="#" class="social-link">📷</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div id="pageTransition" class="page-transition">
+        <div class="transition-loader">
+            <div class="loader-morph"></div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>        <h3>Cloud Solutions</h3>
+                        <p>Scalable cloud infrastructure</p>
+                    </div>
+                    <div class="service-back">
+                        <h3>Cloud Solutions</h3>
+                        <ul>
+                            <li>Cloud Migration</li>
+                            <li>DevOps & CI/CD</li>
+                            <li>Infrastructure Management</li>
+                            <li>Security & Compliance</li>
+                        </ul>
+                        <button class="service-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title fade-up">Our Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce Platform</h3>
+                            <p>Modern shopping experience</p>
+                            <button class="portfolio-btn" onclick="openModal('project1')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Fitness Mobile App</h3>
+                            <p>Health tracking solution</p>
+                            <button class="portfolio-btn" onclick="openModal('project2')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>SaaS Dashboard</h3>
+                            <p>Analytics & reporting tool</p>
+                            <button class="portfolio-btn" onclick="openModal('project3')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Food Delivery App</h3>
+                            <p>On-demand delivery service</p>
+                            <button class="portfolio-btn" onclick="openModal('project4')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-up">What Our Clients Say</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"TechStore transformed our business with their innovative solutions. The team's expertise and dedication exceeded our expectations."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JS</div>
+                            <div class="author-info">
+                                <h4>John Smith</h4>
+                                <span>CEO, InnovateCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Outstanding service and cutting-edge technology. Our mobile app launch was a huge success thanks to their expertise."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MJ</div>
+                            <div class="author-info">
+                                <h4>Maria Johnson</h4>
+                                <span>CTO, StartupHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Professional, reliable, and innovative. TechStore delivered exactly what we needed to scale our business."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DW</div>
+                            <div class="author-info">
+                                <h4>David Wilson</h4>
+                                <span>Founder, TechVentures</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-up">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Tech Street, Innovation City, IC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@techstore.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer slide-up-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Tech<span class="neon">Store</span></span>
+                    <p>Transforming ideas into digital reality</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">Mobile Apps</a></li>
+                            <li><a href="#services">Cloud Solutions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">📘</a>
+                            <a href="#" class="social-link">🐦</a>
+                            <a href="#" class="social-link">💼</a>
+                            <a href="#" class="social-link">📷</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div id="pageTransition" class="page-transition">
+        <div class="transition-loader">
+            <div class="loader-morph"></div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
